@@ -1,0 +1,2564 @@
+<xref>
+  <stories>
+    <performableStory>
+      <story>
+        <path>stories/EmployeeTest.story</path>
+        <description>
+          <descriptionAsString>Employee API Tests</descriptionAsString>
+        </description>
+        <narrative>
+          <inOrderTo></inOrderTo>
+          <asA></asA>
+          <iWantTo></iWantTo>
+          <soThat></soThat>
+        </narrative>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <lifecycle>
+          <before>
+            <steps class="java.util.Arrays$ArrayList">
+              <a class="string-array"/>
+            </steps>
+          </before>
+          <after/>
+        </lifecycle>
+        <scenarios>
+          <scenario>
+            <title>Create Employee</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given RestFul api url for employee &apos;/employee&apos;</string>
+              <string>When POST request is sent for create Employee</string>
+              <string>Then Employee should be created</string>
+              <string>And Status code should be 200</string>
+            </steps>
+          </scenario>
+          <scenario>
+            <title>Read one Employee</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given RestFul api url for employee</string>
+              <string>When GET request is sent with unique employee id</string>
+              <string>Then Employee record with given id should be fetched</string>
+              <string>And Status code should be 200</string>
+            </steps>
+          </scenario>
+          <scenario>
+            <title>Read all Employee</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given RestFul api url for employee</string>
+              <string>When GET all request is sent for Employee</string>
+              <string>Then All Employee records should be fetched</string>
+              <string>And Status code should be 200</string>
+            </steps>
+          </scenario>
+          <scenario>
+            <title>Update Employee</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given RestFul api url for employee</string>
+              <string>When PUT request is sent with unique employee id</string>
+              <string>Then Employee record should be updated</string>
+              <string>And Status code should be 200</string>
+            </steps>
+          </scenario>
+          <scenario>
+            <title>Delete Employee</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given RestFul api url for employee</string>
+              <string>When DELETE request is sent with unique employee id</string>
+              <string>Then Employee record with given id should be deleted</string>
+              <string>And Status code should be 200</string>
+            </steps>
+          </scenario>
+        </scenarios>
+        <name>EmployeeTest.story</name>
+      </story>
+      <localizedNarrative>As a 
+I want to 
+So that </localizedNarrative>
+      <allowed>true</allowed>
+      <status>SUCCESSFUL</status>
+      <givenStories/>
+      <scenarios>
+        <performableScenario>
+          <scenario>
+            <title>Create Employee</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given RestFul api url for employee &apos;/employee&apos;</string>
+              <string>When POST request is sent for create Employee</string>
+              <string>Then Employee should be created</string>
+              <string>And Status code should be 200</string>
+            </steps>
+          </scenario>
+          <storyPath>stories/EmployeeTest.story</storyPath>
+          <allowed>true</allowed>
+          <normalPerformableScenario>
+            <parameters/>
+            <givenStories/>
+            <beforeSteps>
+              <matches/>
+            </beforeSteps>
+            <steps>
+              <matches/>
+              <results>
+                <successful>
+                  <step>Given RestFul api url for employee &apos;/employee&apos;</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>Given RestFul api url for employee &apos;/employee&apos;</parametrisedStep>
+                  <durationInMillis>177</durationInMillis>
+                </successful>
+                <successful>
+                  <step>When POST request is sent for create Employee</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>When POST request is sent for create Employee</parametrisedStep>
+                  <durationInMillis>3958</durationInMillis>
+                </successful>
+                <successful>
+                  <step>Then Employee should be created</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>Then Employee should be created</parametrisedStep>
+                  <durationInMillis>12</durationInMillis>
+                </successful>
+                <successful>
+                  <step>And Status code should be 200</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>And Status code should be 200</parametrisedStep>
+                  <durationInMillis>48</durationInMillis>
+                </successful>
+              </results>
+            </steps>
+            <afterSteps>
+              <matches/>
+            </afterSteps>
+            <storyAndScenarioMeta>
+              <properties/>
+            </storyAndScenarioMeta>
+            <scenario>
+              <title>Create Employee</title>
+              <meta>
+                <properties/>
+              </meta>
+              <givenStories>
+                <givenStories/>
+                <givenStoriesAsString></givenStoriesAsString>
+                <examplesTable>
+                  <tableAsString></tableAsString>
+                  <headerSeparator>|</headerSeparator>
+                  <valueSeparator>|</valueSeparator>
+                  <ignorableSeparator>|--</ignorableSeparator>
+                  <tableTransformers>
+                    <transformers>
+                      <entry>
+                        <string>FORMATTING</string>
+                        <formatting/>
+                      </entry>
+                      <entry>
+                        <string>REPLACING</string>
+                        <replacing/>
+                      </entry>
+                      <entry>
+                        <string>FROM_LANDSCAPE</string>
+                        <fromLandscape/>
+                      </entry>
+                    </transformers>
+                  </tableTransformers>
+                  <headers/>
+                  <data/>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                  <propertiesAsString></propertiesAsString>
+                  <namedParameters/>
+                  <trim>true</trim>
+                </examplesTable>
+              </givenStories>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+              <steps>
+                <string>Given RestFul api url for employee &apos;/employee&apos;</string>
+                <string>When POST request is sent for create Employee</string>
+                <string>Then Employee should be created</string>
+                <string>And Status code should be 200</string>
+              </steps>
+            </scenario>
+          </normalPerformableScenario>
+          <examplePerformableScenarios/>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+        <performableScenario>
+          <scenario>
+            <title>Read one Employee</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given RestFul api url for employee</string>
+              <string>When GET request is sent with unique employee id</string>
+              <string>Then Employee record with given id should be fetched</string>
+              <string>And Status code should be 200</string>
+            </steps>
+          </scenario>
+          <storyPath>stories/EmployeeTest.story</storyPath>
+          <allowed>true</allowed>
+          <normalPerformableScenario>
+            <parameters/>
+            <givenStories/>
+            <beforeSteps>
+              <matches/>
+            </beforeSteps>
+            <steps>
+              <matches/>
+              <results>
+                <successful>
+                  <step>Given RestFul api url for employee</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>Given RestFul api url for employee</parametrisedStep>
+                  <durationInMillis>3</durationInMillis>
+                </successful>
+                <successful>
+                  <step>When GET request is sent with unique employee id</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>When GET request is sent with unique employee id</parametrisedStep>
+                  <durationInMillis>100</durationInMillis>
+                </successful>
+                <successful>
+                  <step>Then Employee record with given id should be fetched</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>Then Employee record with given id should be fetched</parametrisedStep>
+                  <durationInMillis>780</durationInMillis>
+                </successful>
+                <successful>
+                  <step>And Status code should be 200</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>And Status code should be 200</parametrisedStep>
+                  <durationInMillis>3</durationInMillis>
+                </successful>
+              </results>
+            </steps>
+            <afterSteps>
+              <matches/>
+            </afterSteps>
+            <storyAndScenarioMeta>
+              <properties/>
+            </storyAndScenarioMeta>
+            <scenario>
+              <title>Read one Employee</title>
+              <meta>
+                <properties/>
+              </meta>
+              <givenStories>
+                <givenStories/>
+                <givenStoriesAsString></givenStoriesAsString>
+                <examplesTable>
+                  <tableAsString></tableAsString>
+                  <headerSeparator>|</headerSeparator>
+                  <valueSeparator>|</valueSeparator>
+                  <ignorableSeparator>|--</ignorableSeparator>
+                  <tableTransformers>
+                    <transformers>
+                      <entry>
+                        <string>FORMATTING</string>
+                        <formatting/>
+                      </entry>
+                      <entry>
+                        <string>REPLACING</string>
+                        <replacing/>
+                      </entry>
+                      <entry>
+                        <string>FROM_LANDSCAPE</string>
+                        <fromLandscape/>
+                      </entry>
+                    </transformers>
+                  </tableTransformers>
+                  <headers/>
+                  <data/>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                  <propertiesAsString></propertiesAsString>
+                  <namedParameters/>
+                  <trim>true</trim>
+                </examplesTable>
+              </givenStories>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+              <steps>
+                <string>Given RestFul api url for employee</string>
+                <string>When GET request is sent with unique employee id</string>
+                <string>Then Employee record with given id should be fetched</string>
+                <string>And Status code should be 200</string>
+              </steps>
+            </scenario>
+          </normalPerformableScenario>
+          <examplePerformableScenarios/>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+        <performableScenario>
+          <scenario>
+            <title>Read all Employee</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given RestFul api url for employee</string>
+              <string>When GET all request is sent for Employee</string>
+              <string>Then All Employee records should be fetched</string>
+              <string>And Status code should be 200</string>
+            </steps>
+          </scenario>
+          <storyPath>stories/EmployeeTest.story</storyPath>
+          <allowed>true</allowed>
+          <normalPerformableScenario>
+            <parameters/>
+            <givenStories/>
+            <beforeSteps>
+              <matches/>
+            </beforeSteps>
+            <steps>
+              <matches/>
+              <results>
+                <successful>
+                  <step>Given RestFul api url for employee</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>Given RestFul api url for employee</parametrisedStep>
+                  <durationInMillis>4</durationInMillis>
+                </successful>
+                <successful>
+                  <step>When GET all request is sent for Employee</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>When GET all request is sent for Employee</parametrisedStep>
+                  <durationInMillis>66</durationInMillis>
+                </successful>
+                <successful>
+                  <step>Then All Employee records should be fetched</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>Then All Employee records should be fetched</parametrisedStep>
+                  <durationInMillis>43</durationInMillis>
+                </successful>
+                <successful>
+                  <step>And Status code should be 200</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>And Status code should be 200</parametrisedStep>
+                  <durationInMillis>3</durationInMillis>
+                </successful>
+              </results>
+            </steps>
+            <afterSteps>
+              <matches/>
+            </afterSteps>
+            <storyAndScenarioMeta>
+              <properties/>
+            </storyAndScenarioMeta>
+            <scenario>
+              <title>Read all Employee</title>
+              <meta>
+                <properties/>
+              </meta>
+              <givenStories>
+                <givenStories/>
+                <givenStoriesAsString></givenStoriesAsString>
+                <examplesTable>
+                  <tableAsString></tableAsString>
+                  <headerSeparator>|</headerSeparator>
+                  <valueSeparator>|</valueSeparator>
+                  <ignorableSeparator>|--</ignorableSeparator>
+                  <tableTransformers>
+                    <transformers>
+                      <entry>
+                        <string>FORMATTING</string>
+                        <formatting/>
+                      </entry>
+                      <entry>
+                        <string>REPLACING</string>
+                        <replacing/>
+                      </entry>
+                      <entry>
+                        <string>FROM_LANDSCAPE</string>
+                        <fromLandscape/>
+                      </entry>
+                    </transformers>
+                  </tableTransformers>
+                  <headers/>
+                  <data/>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                  <propertiesAsString></propertiesAsString>
+                  <namedParameters/>
+                  <trim>true</trim>
+                </examplesTable>
+              </givenStories>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+              <steps>
+                <string>Given RestFul api url for employee</string>
+                <string>When GET all request is sent for Employee</string>
+                <string>Then All Employee records should be fetched</string>
+                <string>And Status code should be 200</string>
+              </steps>
+            </scenario>
+          </normalPerformableScenario>
+          <examplePerformableScenarios/>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+        <performableScenario>
+          <scenario>
+            <title>Update Employee</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given RestFul api url for employee</string>
+              <string>When PUT request is sent with unique employee id</string>
+              <string>Then Employee record should be updated</string>
+              <string>And Status code should be 200</string>
+            </steps>
+          </scenario>
+          <storyPath>stories/EmployeeTest.story</storyPath>
+          <allowed>true</allowed>
+          <normalPerformableScenario>
+            <parameters/>
+            <givenStories/>
+            <beforeSteps>
+              <matches/>
+            </beforeSteps>
+            <steps>
+              <matches/>
+              <results>
+                <successful>
+                  <step>Given RestFul api url for employee</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>Given RestFul api url for employee</parametrisedStep>
+                  <durationInMillis>5</durationInMillis>
+                </successful>
+                <successful>
+                  <step>When PUT request is sent with unique employee id</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>When PUT request is sent with unique employee id</parametrisedStep>
+                  <durationInMillis>130</durationInMillis>
+                </successful>
+                <successful>
+                  <step>Then Employee record should be updated</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>Then Employee record should be updated</parametrisedStep>
+                  <durationInMillis>50</durationInMillis>
+                </successful>
+                <successful>
+                  <step>And Status code should be 200</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>And Status code should be 200</parametrisedStep>
+                  <durationInMillis>2</durationInMillis>
+                </successful>
+              </results>
+            </steps>
+            <afterSteps>
+              <matches/>
+            </afterSteps>
+            <storyAndScenarioMeta>
+              <properties/>
+            </storyAndScenarioMeta>
+            <scenario>
+              <title>Update Employee</title>
+              <meta>
+                <properties/>
+              </meta>
+              <givenStories>
+                <givenStories/>
+                <givenStoriesAsString></givenStoriesAsString>
+                <examplesTable>
+                  <tableAsString></tableAsString>
+                  <headerSeparator>|</headerSeparator>
+                  <valueSeparator>|</valueSeparator>
+                  <ignorableSeparator>|--</ignorableSeparator>
+                  <tableTransformers>
+                    <transformers>
+                      <entry>
+                        <string>FORMATTING</string>
+                        <formatting/>
+                      </entry>
+                      <entry>
+                        <string>REPLACING</string>
+                        <replacing/>
+                      </entry>
+                      <entry>
+                        <string>FROM_LANDSCAPE</string>
+                        <fromLandscape/>
+                      </entry>
+                    </transformers>
+                  </tableTransformers>
+                  <headers/>
+                  <data/>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                  <propertiesAsString></propertiesAsString>
+                  <namedParameters/>
+                  <trim>true</trim>
+                </examplesTable>
+              </givenStories>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+              <steps>
+                <string>Given RestFul api url for employee</string>
+                <string>When PUT request is sent with unique employee id</string>
+                <string>Then Employee record should be updated</string>
+                <string>And Status code should be 200</string>
+              </steps>
+            </scenario>
+          </normalPerformableScenario>
+          <examplePerformableScenarios/>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+        <performableScenario>
+          <scenario>
+            <title>Delete Employee</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given RestFul api url for employee</string>
+              <string>When DELETE request is sent with unique employee id</string>
+              <string>Then Employee record with given id should be deleted</string>
+              <string>And Status code should be 200</string>
+            </steps>
+          </scenario>
+          <storyPath>stories/EmployeeTest.story</storyPath>
+          <allowed>true</allowed>
+          <normalPerformableScenario>
+            <parameters/>
+            <givenStories/>
+            <beforeSteps>
+              <matches/>
+            </beforeSteps>
+            <steps>
+              <matches/>
+              <results>
+                <successful>
+                  <step>Given RestFul api url for employee</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>Given RestFul api url for employee</parametrisedStep>
+                  <durationInMillis>3</durationInMillis>
+                </successful>
+                <successful>
+                  <step>When DELETE request is sent with unique employee id</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>When DELETE request is sent with unique employee id</parametrisedStep>
+                  <durationInMillis>60</durationInMillis>
+                </successful>
+                <successful>
+                  <step>Then Employee record with given id should be deleted</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>Then Employee record with given id should be deleted</parametrisedStep>
+                  <durationInMillis>2</durationInMillis>
+                </successful>
+                <successful>
+                  <step>And Status code should be 200</step>
+                  <type>SUCCESSFUL</type>
+                  <parametrisedStep>And Status code should be 200</parametrisedStep>
+                  <durationInMillis>2</durationInMillis>
+                </successful>
+              </results>
+            </steps>
+            <afterSteps>
+              <matches/>
+            </afterSteps>
+            <storyAndScenarioMeta>
+              <properties/>
+            </storyAndScenarioMeta>
+            <scenario>
+              <title>Delete Employee</title>
+              <meta>
+                <properties/>
+              </meta>
+              <givenStories>
+                <givenStories/>
+                <givenStoriesAsString></givenStoriesAsString>
+                <examplesTable>
+                  <tableAsString></tableAsString>
+                  <headerSeparator>|</headerSeparator>
+                  <valueSeparator>|</valueSeparator>
+                  <ignorableSeparator>|--</ignorableSeparator>
+                  <tableTransformers>
+                    <transformers>
+                      <entry>
+                        <string>FORMATTING</string>
+                        <formatting/>
+                      </entry>
+                      <entry>
+                        <string>REPLACING</string>
+                        <replacing/>
+                      </entry>
+                      <entry>
+                        <string>FROM_LANDSCAPE</string>
+                        <fromLandscape/>
+                      </entry>
+                    </transformers>
+                  </tableTransformers>
+                  <headers/>
+                  <data/>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                  <propertiesAsString></propertiesAsString>
+                  <namedParameters/>
+                  <trim>true</trim>
+                </examplesTable>
+              </givenStories>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+              <steps>
+                <string>Given RestFul api url for employee</string>
+                <string>When DELETE request is sent with unique employee id</string>
+                <string>Then Employee record with given id should be deleted</string>
+                <string>And Status code should be 200</string>
+              </steps>
+            </scenario>
+          </normalPerformableScenario>
+          <examplePerformableScenarios/>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+      </scenarios>
+      <beforeSteps/>
+      <afterSteps/>
+      <timing>
+        <durationInMillis>5741</durationInMillis>
+      </timing>
+      <givenStory>false</givenStory>
+    </performableStory>
+  </stories>
+  <scenarios>
+    <performableScenario>
+      <scenario>
+        <title>Create Employee</title>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString></tableAsString>
+          <headerSeparator>|</headerSeparator>
+          <valueSeparator>|</valueSeparator>
+          <ignorableSeparator>|--</ignorableSeparator>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers/>
+          <data/>
+          <properties>
+            <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+          <trim>true</trim>
+        </examplesTable>
+        <steps>
+          <string>Given RestFul api url for employee &apos;/employee&apos;</string>
+          <string>When POST request is sent for create Employee</string>
+          <string>Then Employee should be created</string>
+          <string>And Status code should be 200</string>
+        </steps>
+      </scenario>
+      <storyPath>stories/EmployeeTest.story</storyPath>
+      <allowed>true</allowed>
+      <normalPerformableScenario>
+        <parameters/>
+        <givenStories/>
+        <beforeSteps>
+          <matches/>
+        </beforeSteps>
+        <steps>
+          <matches/>
+          <results>
+            <successful>
+              <step>Given RestFul api url for employee &apos;/employee&apos;</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>Given RestFul api url for employee &apos;/employee&apos;</parametrisedStep>
+              <durationInMillis>177</durationInMillis>
+            </successful>
+            <successful>
+              <step>When POST request is sent for create Employee</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>When POST request is sent for create Employee</parametrisedStep>
+              <durationInMillis>3958</durationInMillis>
+            </successful>
+            <successful>
+              <step>Then Employee should be created</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>Then Employee should be created</parametrisedStep>
+              <durationInMillis>12</durationInMillis>
+            </successful>
+            <successful>
+              <step>And Status code should be 200</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>And Status code should be 200</parametrisedStep>
+              <durationInMillis>48</durationInMillis>
+            </successful>
+          </results>
+        </steps>
+        <afterSteps>
+          <matches/>
+        </afterSteps>
+        <storyAndScenarioMeta>
+          <properties/>
+        </storyAndScenarioMeta>
+        <scenario>
+          <title>Create Employee</title>
+          <meta>
+            <properties/>
+          </meta>
+          <givenStories>
+            <givenStories/>
+            <givenStoriesAsString></givenStoriesAsString>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+          </givenStories>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+          <steps>
+            <string>Given RestFul api url for employee &apos;/employee&apos;</string>
+            <string>When POST request is sent for create Employee</string>
+            <string>Then Employee should be created</string>
+            <string>And Status code should be 200</string>
+          </steps>
+        </scenario>
+      </normalPerformableScenario>
+      <examplePerformableScenarios/>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+    <performableScenario>
+      <scenario>
+        <title>Read one Employee</title>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString></tableAsString>
+          <headerSeparator>|</headerSeparator>
+          <valueSeparator>|</valueSeparator>
+          <ignorableSeparator>|--</ignorableSeparator>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers/>
+          <data/>
+          <properties>
+            <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+          <trim>true</trim>
+        </examplesTable>
+        <steps>
+          <string>Given RestFul api url for employee</string>
+          <string>When GET request is sent with unique employee id</string>
+          <string>Then Employee record with given id should be fetched</string>
+          <string>And Status code should be 200</string>
+        </steps>
+      </scenario>
+      <storyPath>stories/EmployeeTest.story</storyPath>
+      <allowed>true</allowed>
+      <normalPerformableScenario>
+        <parameters/>
+        <givenStories/>
+        <beforeSteps>
+          <matches/>
+        </beforeSteps>
+        <steps>
+          <matches/>
+          <results>
+            <successful>
+              <step>Given RestFul api url for employee</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>Given RestFul api url for employee</parametrisedStep>
+              <durationInMillis>3</durationInMillis>
+            </successful>
+            <successful>
+              <step>When GET request is sent with unique employee id</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>When GET request is sent with unique employee id</parametrisedStep>
+              <durationInMillis>100</durationInMillis>
+            </successful>
+            <successful>
+              <step>Then Employee record with given id should be fetched</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>Then Employee record with given id should be fetched</parametrisedStep>
+              <durationInMillis>780</durationInMillis>
+            </successful>
+            <successful>
+              <step>And Status code should be 200</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>And Status code should be 200</parametrisedStep>
+              <durationInMillis>3</durationInMillis>
+            </successful>
+          </results>
+        </steps>
+        <afterSteps>
+          <matches/>
+        </afterSteps>
+        <storyAndScenarioMeta>
+          <properties/>
+        </storyAndScenarioMeta>
+        <scenario>
+          <title>Read one Employee</title>
+          <meta>
+            <properties/>
+          </meta>
+          <givenStories>
+            <givenStories/>
+            <givenStoriesAsString></givenStoriesAsString>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+          </givenStories>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+          <steps>
+            <string>Given RestFul api url for employee</string>
+            <string>When GET request is sent with unique employee id</string>
+            <string>Then Employee record with given id should be fetched</string>
+            <string>And Status code should be 200</string>
+          </steps>
+        </scenario>
+      </normalPerformableScenario>
+      <examplePerformableScenarios/>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+    <performableScenario>
+      <scenario>
+        <title>Read all Employee</title>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString></tableAsString>
+          <headerSeparator>|</headerSeparator>
+          <valueSeparator>|</valueSeparator>
+          <ignorableSeparator>|--</ignorableSeparator>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers/>
+          <data/>
+          <properties>
+            <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+          <trim>true</trim>
+        </examplesTable>
+        <steps>
+          <string>Given RestFul api url for employee</string>
+          <string>When GET all request is sent for Employee</string>
+          <string>Then All Employee records should be fetched</string>
+          <string>And Status code should be 200</string>
+        </steps>
+      </scenario>
+      <storyPath>stories/EmployeeTest.story</storyPath>
+      <allowed>true</allowed>
+      <normalPerformableScenario>
+        <parameters/>
+        <givenStories/>
+        <beforeSteps>
+          <matches/>
+        </beforeSteps>
+        <steps>
+          <matches/>
+          <results>
+            <successful>
+              <step>Given RestFul api url for employee</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>Given RestFul api url for employee</parametrisedStep>
+              <durationInMillis>4</durationInMillis>
+            </successful>
+            <successful>
+              <step>When GET all request is sent for Employee</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>When GET all request is sent for Employee</parametrisedStep>
+              <durationInMillis>66</durationInMillis>
+            </successful>
+            <successful>
+              <step>Then All Employee records should be fetched</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>Then All Employee records should be fetched</parametrisedStep>
+              <durationInMillis>43</durationInMillis>
+            </successful>
+            <successful>
+              <step>And Status code should be 200</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>And Status code should be 200</parametrisedStep>
+              <durationInMillis>3</durationInMillis>
+            </successful>
+          </results>
+        </steps>
+        <afterSteps>
+          <matches/>
+        </afterSteps>
+        <storyAndScenarioMeta>
+          <properties/>
+        </storyAndScenarioMeta>
+        <scenario>
+          <title>Read all Employee</title>
+          <meta>
+            <properties/>
+          </meta>
+          <givenStories>
+            <givenStories/>
+            <givenStoriesAsString></givenStoriesAsString>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+          </givenStories>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+          <steps>
+            <string>Given RestFul api url for employee</string>
+            <string>When GET all request is sent for Employee</string>
+            <string>Then All Employee records should be fetched</string>
+            <string>And Status code should be 200</string>
+          </steps>
+        </scenario>
+      </normalPerformableScenario>
+      <examplePerformableScenarios/>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+    <performableScenario>
+      <scenario>
+        <title>Update Employee</title>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString></tableAsString>
+          <headerSeparator>|</headerSeparator>
+          <valueSeparator>|</valueSeparator>
+          <ignorableSeparator>|--</ignorableSeparator>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers/>
+          <data/>
+          <properties>
+            <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+          <trim>true</trim>
+        </examplesTable>
+        <steps>
+          <string>Given RestFul api url for employee</string>
+          <string>When PUT request is sent with unique employee id</string>
+          <string>Then Employee record should be updated</string>
+          <string>And Status code should be 200</string>
+        </steps>
+      </scenario>
+      <storyPath>stories/EmployeeTest.story</storyPath>
+      <allowed>true</allowed>
+      <normalPerformableScenario>
+        <parameters/>
+        <givenStories/>
+        <beforeSteps>
+          <matches/>
+        </beforeSteps>
+        <steps>
+          <matches/>
+          <results>
+            <successful>
+              <step>Given RestFul api url for employee</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>Given RestFul api url for employee</parametrisedStep>
+              <durationInMillis>5</durationInMillis>
+            </successful>
+            <successful>
+              <step>When PUT request is sent with unique employee id</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>When PUT request is sent with unique employee id</parametrisedStep>
+              <durationInMillis>130</durationInMillis>
+            </successful>
+            <successful>
+              <step>Then Employee record should be updated</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>Then Employee record should be updated</parametrisedStep>
+              <durationInMillis>50</durationInMillis>
+            </successful>
+            <successful>
+              <step>And Status code should be 200</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>And Status code should be 200</parametrisedStep>
+              <durationInMillis>2</durationInMillis>
+            </successful>
+          </results>
+        </steps>
+        <afterSteps>
+          <matches/>
+        </afterSteps>
+        <storyAndScenarioMeta>
+          <properties/>
+        </storyAndScenarioMeta>
+        <scenario>
+          <title>Update Employee</title>
+          <meta>
+            <properties/>
+          </meta>
+          <givenStories>
+            <givenStories/>
+            <givenStoriesAsString></givenStoriesAsString>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+          </givenStories>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+          <steps>
+            <string>Given RestFul api url for employee</string>
+            <string>When PUT request is sent with unique employee id</string>
+            <string>Then Employee record should be updated</string>
+            <string>And Status code should be 200</string>
+          </steps>
+        </scenario>
+      </normalPerformableScenario>
+      <examplePerformableScenarios/>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+    <performableScenario>
+      <scenario>
+        <title>Delete Employee</title>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString></tableAsString>
+          <headerSeparator>|</headerSeparator>
+          <valueSeparator>|</valueSeparator>
+          <ignorableSeparator>|--</ignorableSeparator>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers/>
+          <data/>
+          <properties>
+            <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+          <trim>true</trim>
+        </examplesTable>
+        <steps>
+          <string>Given RestFul api url for employee</string>
+          <string>When DELETE request is sent with unique employee id</string>
+          <string>Then Employee record with given id should be deleted</string>
+          <string>And Status code should be 200</string>
+        </steps>
+      </scenario>
+      <storyPath>stories/EmployeeTest.story</storyPath>
+      <allowed>true</allowed>
+      <normalPerformableScenario>
+        <parameters/>
+        <givenStories/>
+        <beforeSteps>
+          <matches/>
+        </beforeSteps>
+        <steps>
+          <matches/>
+          <results>
+            <successful>
+              <step>Given RestFul api url for employee</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>Given RestFul api url for employee</parametrisedStep>
+              <durationInMillis>3</durationInMillis>
+            </successful>
+            <successful>
+              <step>When DELETE request is sent with unique employee id</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>When DELETE request is sent with unique employee id</parametrisedStep>
+              <durationInMillis>60</durationInMillis>
+            </successful>
+            <successful>
+              <step>Then Employee record with given id should be deleted</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>Then Employee record with given id should be deleted</parametrisedStep>
+              <durationInMillis>2</durationInMillis>
+            </successful>
+            <successful>
+              <step>And Status code should be 200</step>
+              <type>SUCCESSFUL</type>
+              <parametrisedStep>And Status code should be 200</parametrisedStep>
+              <durationInMillis>2</durationInMillis>
+            </successful>
+          </results>
+        </steps>
+        <afterSteps>
+          <matches/>
+        </afterSteps>
+        <storyAndScenarioMeta>
+          <properties/>
+        </storyAndScenarioMeta>
+        <scenario>
+          <title>Delete Employee</title>
+          <meta>
+            <properties/>
+          </meta>
+          <givenStories>
+            <givenStories/>
+            <givenStoriesAsString></givenStoriesAsString>
+            <examplesTable>
+              <tableAsString></tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers/>
+              <data/>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+          </givenStories>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+          <steps>
+            <string>Given RestFul api url for employee</string>
+            <string>When DELETE request is sent with unique employee id</string>
+            <string>Then Employee record with given id should be deleted</string>
+            <string>And Status code should be 200</string>
+          </steps>
+        </scenario>
+      </normalPerformableScenario>
+      <examplePerformableScenarios/>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+  </scenarios>
+</xref>

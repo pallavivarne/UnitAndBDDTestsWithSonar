@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>EmployeeService.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoco Multi Modules :: JUnit</a> &gt; <a href="index.source.html" class="el_package">com.emp.service</a> &gt; <span class="el_source">EmployeeService.java</span></div><h1>EmployeeService.java</h1><pre class="source lang-java linenums">package com.emp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.emp.base.BaseService;
+import com.emp.model.Employee;
+import com.emp.repo.EmployeeRepo;
+
+@Service
+public class EmployeeService extends BaseService &lt;Employee, Integer&gt;{
+
+	@Autowired
+	EmployeeRepo employeeRepo; 
+	
+	@Autowired
+	public EmployeeService(EmployeeRepo employeeRepo) {
+<span class="fc" id="L18">		super(employeeRepo);</span>
+<span class="fc" id="L19">		this.employeeRepo = employeeRepo;</span>
+<span class="fc" id="L20">	}</span>
+	
+	public Employee createEmp(Employee inputentity)
+	{
+<span class="nc" id="L24">		inputentity.setSalary(validateSalary(inputentity.getSalary()));</span>
+<span class="nc" id="L25">		return create(inputentity);</span>
+	}
+	
+	public Employee updateEmp(Employee inputentity, Integer id) {
+<span class="nc" id="L29">		Employee employee = employeeRepo.findOne(id);</span>
+<span class="nc" id="L30">		employee.setName(inputentity.getName());</span>
+<span class="nc" id="L31">		employee.setAddress(inputentity.getAddress());</span>
+<span class="nc" id="L32">		employee.setDeptId(inputentity.getDeptId());</span>
+<span class="nc" id="L33">		employee.setSalary(inputentity.getSalary());</span>
+<span class="nc" id="L34">		return update(employee);</span>
+	}
+	
+	public Integer validateSalary(Integer salary) throws IllegalArgumentException {
+<span class="fc" id="L38">		int revisedSalary = salary;</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">		if(revisedSalary&lt;10000)</span>
+<span class="fc" id="L40">			throw new IllegalArgumentException(&quot;Salary should not be less than 10000&quot;);</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">		else if(revisedSalary&lt;15000)</span>
+<span class="fc" id="L42">			revisedSalary=15000;</span>
+<span class="fc" id="L43">		return revisedSalary;</span>
+	}
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>

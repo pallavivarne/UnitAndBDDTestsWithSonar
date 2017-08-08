@@ -1,0 +1,3021 @@
+{"xref": {
+  "stories": [
+    {
+      "story": {
+        "path": "stories/EmployeeTest.story",
+        "description": {
+          "descriptionAsString": "Employee API Tests"
+        },
+        "narrative": {
+          "inOrderTo": "",
+          "asA": "",
+          "iWantTo": "",
+          "soThat": ""
+        },
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "lifecycle": {
+          "before": {
+            "steps": [
+              []
+            ]
+          },
+          "after": []
+        },
+        "scenarios": [
+          {
+            "title": "Create Employee",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given RestFul api url for employee '/employee'",
+              "When POST request is sent for create Employee",
+              "Then Employee should be created",
+              "And Status code should be 200"
+            ]
+          },
+          {
+            "title": "Read one Employee",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given RestFul api url for employee",
+              "When GET request is sent with unique employee id",
+              "Then Employee record with given id should be fetched",
+              "And Status code should be 200"
+            ]
+          },
+          {
+            "title": "Read all Employee",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given RestFul api url for employee",
+              "When GET all request is sent for Employee",
+              "Then All Employee records should be fetched",
+              "And Status code should be 200"
+            ]
+          },
+          {
+            "title": "Update Employee",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given RestFul api url for employee",
+              "When PUT request is sent with unique employee id",
+              "Then Employee record should be updated",
+              "And Status code should be 200"
+            ]
+          },
+          {
+            "title": "Delete Employee",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given RestFul api url for employee",
+              "When DELETE request is sent with unique employee id",
+              "Then Employee record with given id should be deleted",
+              "And Status code should be 200"
+            ]
+          }
+        ],
+        "name": "EmployeeTest.story"
+      },
+      "localizedNarrative": "As a \nI want to \nSo that ",
+      "allowed": true,
+      "status": "SUCCESSFUL",
+      "givenStories": [],
+      "scenarios": [
+        {
+          "scenario": {
+            "title": "Create Employee",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given RestFul api url for employee '/employee'",
+              "When POST request is sent for create Employee",
+              "Then Employee should be created",
+              "And Status code should be 200"
+            ]
+          },
+          "storyPath": "stories/EmployeeTest.story",
+          "allowed": true,
+          "normalPerformableScenario": {
+            "parameters": [],
+            "givenStories": [],
+            "beforeSteps": {
+              "matches": []
+            },
+            "steps": {
+              "matches": [],
+              "results": [
+                {
+                  "step": "Given RestFul api url for employee '/employee'",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Given RestFul api url for employee '/employee'",
+                  "durationInMillis": 177
+                },
+                {
+                  "step": "When POST request is sent for create Employee",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "When POST request is sent for create Employee",
+                  "durationInMillis": 3958
+                },
+                {
+                  "step": "Then Employee should be created",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Then Employee should be created",
+                  "durationInMillis": 12
+                },
+                {
+                  "step": "And Status code should be 200",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "And Status code should be 200",
+                  "durationInMillis": 48
+                }
+              ]
+            },
+            "afterSteps": {
+              "matches": []
+            },
+            "storyAndScenarioMeta": {
+              "properties": []
+            },
+            "scenario": {
+              "title": "Create Employee",
+              "meta": {
+                "properties": []
+              },
+              "givenStories": {
+                "givenStories": [],
+                "givenStoriesAsString": "",
+                "examplesTable": {
+                  "tableAsString": "",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [],
+                  "data": [],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                }
+              },
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              },
+              "steps": [
+                "Given RestFul api url for employee '/employee'",
+                "When POST request is sent for create Employee",
+                "Then Employee should be created",
+                "And Status code should be 200"
+              ]
+            }
+          },
+          "examplePerformableScenarios": [],
+          "status": "SUCCESSFUL"
+        },
+        {
+          "scenario": {
+            "title": "Read one Employee",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given RestFul api url for employee",
+              "When GET request is sent with unique employee id",
+              "Then Employee record with given id should be fetched",
+              "And Status code should be 200"
+            ]
+          },
+          "storyPath": "stories/EmployeeTest.story",
+          "allowed": true,
+          "normalPerformableScenario": {
+            "parameters": [],
+            "givenStories": [],
+            "beforeSteps": {
+              "matches": []
+            },
+            "steps": {
+              "matches": [],
+              "results": [
+                {
+                  "step": "Given RestFul api url for employee",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Given RestFul api url for employee",
+                  "durationInMillis": 3
+                },
+                {
+                  "step": "When GET request is sent with unique employee id",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "When GET request is sent with unique employee id",
+                  "durationInMillis": 100
+                },
+                {
+                  "step": "Then Employee record with given id should be fetched",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Then Employee record with given id should be fetched",
+                  "durationInMillis": 780
+                },
+                {
+                  "step": "And Status code should be 200",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "And Status code should be 200",
+                  "durationInMillis": 3
+                }
+              ]
+            },
+            "afterSteps": {
+              "matches": []
+            },
+            "storyAndScenarioMeta": {
+              "properties": []
+            },
+            "scenario": {
+              "title": "Read one Employee",
+              "meta": {
+                "properties": []
+              },
+              "givenStories": {
+                "givenStories": [],
+                "givenStoriesAsString": "",
+                "examplesTable": {
+                  "tableAsString": "",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [],
+                  "data": [],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                }
+              },
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              },
+              "steps": [
+                "Given RestFul api url for employee",
+                "When GET request is sent with unique employee id",
+                "Then Employee record with given id should be fetched",
+                "And Status code should be 200"
+              ]
+            }
+          },
+          "examplePerformableScenarios": [],
+          "status": "SUCCESSFUL"
+        },
+        {
+          "scenario": {
+            "title": "Read all Employee",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given RestFul api url for employee",
+              "When GET all request is sent for Employee",
+              "Then All Employee records should be fetched",
+              "And Status code should be 200"
+            ]
+          },
+          "storyPath": "stories/EmployeeTest.story",
+          "allowed": true,
+          "normalPerformableScenario": {
+            "parameters": [],
+            "givenStories": [],
+            "beforeSteps": {
+              "matches": []
+            },
+            "steps": {
+              "matches": [],
+              "results": [
+                {
+                  "step": "Given RestFul api url for employee",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Given RestFul api url for employee",
+                  "durationInMillis": 4
+                },
+                {
+                  "step": "When GET all request is sent for Employee",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "When GET all request is sent for Employee",
+                  "durationInMillis": 66
+                },
+                {
+                  "step": "Then All Employee records should be fetched",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Then All Employee records should be fetched",
+                  "durationInMillis": 43
+                },
+                {
+                  "step": "And Status code should be 200",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "And Status code should be 200",
+                  "durationInMillis": 3
+                }
+              ]
+            },
+            "afterSteps": {
+              "matches": []
+            },
+            "storyAndScenarioMeta": {
+              "properties": []
+            },
+            "scenario": {
+              "title": "Read all Employee",
+              "meta": {
+                "properties": []
+              },
+              "givenStories": {
+                "givenStories": [],
+                "givenStoriesAsString": "",
+                "examplesTable": {
+                  "tableAsString": "",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [],
+                  "data": [],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                }
+              },
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              },
+              "steps": [
+                "Given RestFul api url for employee",
+                "When GET all request is sent for Employee",
+                "Then All Employee records should be fetched",
+                "And Status code should be 200"
+              ]
+            }
+          },
+          "examplePerformableScenarios": [],
+          "status": "SUCCESSFUL"
+        },
+        {
+          "scenario": {
+            "title": "Update Employee",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given RestFul api url for employee",
+              "When PUT request is sent with unique employee id",
+              "Then Employee record should be updated",
+              "And Status code should be 200"
+            ]
+          },
+          "storyPath": "stories/EmployeeTest.story",
+          "allowed": true,
+          "normalPerformableScenario": {
+            "parameters": [],
+            "givenStories": [],
+            "beforeSteps": {
+              "matches": []
+            },
+            "steps": {
+              "matches": [],
+              "results": [
+                {
+                  "step": "Given RestFul api url for employee",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Given RestFul api url for employee",
+                  "durationInMillis": 5
+                },
+                {
+                  "step": "When PUT request is sent with unique employee id",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "When PUT request is sent with unique employee id",
+                  "durationInMillis": 130
+                },
+                {
+                  "step": "Then Employee record should be updated",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Then Employee record should be updated",
+                  "durationInMillis": 50
+                },
+                {
+                  "step": "And Status code should be 200",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "And Status code should be 200",
+                  "durationInMillis": 2
+                }
+              ]
+            },
+            "afterSteps": {
+              "matches": []
+            },
+            "storyAndScenarioMeta": {
+              "properties": []
+            },
+            "scenario": {
+              "title": "Update Employee",
+              "meta": {
+                "properties": []
+              },
+              "givenStories": {
+                "givenStories": [],
+                "givenStoriesAsString": "",
+                "examplesTable": {
+                  "tableAsString": "",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [],
+                  "data": [],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                }
+              },
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              },
+              "steps": [
+                "Given RestFul api url for employee",
+                "When PUT request is sent with unique employee id",
+                "Then Employee record should be updated",
+                "And Status code should be 200"
+              ]
+            }
+          },
+          "examplePerformableScenarios": [],
+          "status": "SUCCESSFUL"
+        },
+        {
+          "scenario": {
+            "title": "Delete Employee",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given RestFul api url for employee",
+              "When DELETE request is sent with unique employee id",
+              "Then Employee record with given id should be deleted",
+              "And Status code should be 200"
+            ]
+          },
+          "storyPath": "stories/EmployeeTest.story",
+          "allowed": true,
+          "normalPerformableScenario": {
+            "parameters": [],
+            "givenStories": [],
+            "beforeSteps": {
+              "matches": []
+            },
+            "steps": {
+              "matches": [],
+              "results": [
+                {
+                  "step": "Given RestFul api url for employee",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Given RestFul api url for employee",
+                  "durationInMillis": 3
+                },
+                {
+                  "step": "When DELETE request is sent with unique employee id",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "When DELETE request is sent with unique employee id",
+                  "durationInMillis": 60
+                },
+                {
+                  "step": "Then Employee record with given id should be deleted",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Then Employee record with given id should be deleted",
+                  "durationInMillis": 2
+                },
+                {
+                  "step": "And Status code should be 200",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "And Status code should be 200",
+                  "durationInMillis": 2
+                }
+              ]
+            },
+            "afterSteps": {
+              "matches": []
+            },
+            "storyAndScenarioMeta": {
+              "properties": []
+            },
+            "scenario": {
+              "title": "Delete Employee",
+              "meta": {
+                "properties": []
+              },
+              "givenStories": {
+                "givenStories": [],
+                "givenStoriesAsString": "",
+                "examplesTable": {
+                  "tableAsString": "",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [],
+                  "data": [],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                }
+              },
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              },
+              "steps": [
+                "Given RestFul api url for employee",
+                "When DELETE request is sent with unique employee id",
+                "Then Employee record with given id should be deleted",
+                "And Status code should be 200"
+              ]
+            }
+          },
+          "examplePerformableScenarios": [],
+          "status": "SUCCESSFUL"
+        }
+      ],
+      "beforeSteps": {},
+      "afterSteps": {},
+      "timing": {
+        "durationInMillis": 5741
+      },
+      "givenStory": false
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": {
+        "title": "Create Employee",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [],
+          "data": [],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given RestFul api url for employee '/employee'",
+          "When POST request is sent for create Employee",
+          "Then Employee should be created",
+          "And Status code should be 200"
+        ]
+      },
+      "storyPath": "stories/EmployeeTest.story",
+      "allowed": true,
+      "normalPerformableScenario": {
+        "parameters": [],
+        "givenStories": [],
+        "beforeSteps": {
+          "matches": []
+        },
+        "steps": {
+          "matches": [],
+          "results": [
+            {
+              "step": "Given RestFul api url for employee '/employee'",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Given RestFul api url for employee '/employee'",
+              "durationInMillis": 177
+            },
+            {
+              "step": "When POST request is sent for create Employee",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "When POST request is sent for create Employee",
+              "durationInMillis": 3958
+            },
+            {
+              "step": "Then Employee should be created",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Then Employee should be created",
+              "durationInMillis": 12
+            },
+            {
+              "step": "And Status code should be 200",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "And Status code should be 200",
+              "durationInMillis": 48
+            }
+          ]
+        },
+        "afterSteps": {
+          "matches": []
+        },
+        "storyAndScenarioMeta": {
+          "properties": []
+        },
+        "scenario": {
+          "title": "Create Employee",
+          "meta": {
+            "properties": []
+          },
+          "givenStories": {
+            "givenStories": [],
+            "givenStoriesAsString": "",
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            }
+          },
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          },
+          "steps": [
+            "Given RestFul api url for employee '/employee'",
+            "When POST request is sent for create Employee",
+            "Then Employee should be created",
+            "And Status code should be 200"
+          ]
+        }
+      },
+      "examplePerformableScenarios": [],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "Read one Employee",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [],
+          "data": [],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given RestFul api url for employee",
+          "When GET request is sent with unique employee id",
+          "Then Employee record with given id should be fetched",
+          "And Status code should be 200"
+        ]
+      },
+      "storyPath": "stories/EmployeeTest.story",
+      "allowed": true,
+      "normalPerformableScenario": {
+        "parameters": [],
+        "givenStories": [],
+        "beforeSteps": {
+          "matches": []
+        },
+        "steps": {
+          "matches": [],
+          "results": [
+            {
+              "step": "Given RestFul api url for employee",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Given RestFul api url for employee",
+              "durationInMillis": 3
+            },
+            {
+              "step": "When GET request is sent with unique employee id",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "When GET request is sent with unique employee id",
+              "durationInMillis": 100
+            },
+            {
+              "step": "Then Employee record with given id should be fetched",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Then Employee record with given id should be fetched",
+              "durationInMillis": 780
+            },
+            {
+              "step": "And Status code should be 200",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "And Status code should be 200",
+              "durationInMillis": 3
+            }
+          ]
+        },
+        "afterSteps": {
+          "matches": []
+        },
+        "storyAndScenarioMeta": {
+          "properties": []
+        },
+        "scenario": {
+          "title": "Read one Employee",
+          "meta": {
+            "properties": []
+          },
+          "givenStories": {
+            "givenStories": [],
+            "givenStoriesAsString": "",
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            }
+          },
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          },
+          "steps": [
+            "Given RestFul api url for employee",
+            "When GET request is sent with unique employee id",
+            "Then Employee record with given id should be fetched",
+            "And Status code should be 200"
+          ]
+        }
+      },
+      "examplePerformableScenarios": [],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "Read all Employee",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [],
+          "data": [],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given RestFul api url for employee",
+          "When GET all request is sent for Employee",
+          "Then All Employee records should be fetched",
+          "And Status code should be 200"
+        ]
+      },
+      "storyPath": "stories/EmployeeTest.story",
+      "allowed": true,
+      "normalPerformableScenario": {
+        "parameters": [],
+        "givenStories": [],
+        "beforeSteps": {
+          "matches": []
+        },
+        "steps": {
+          "matches": [],
+          "results": [
+            {
+              "step": "Given RestFul api url for employee",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Given RestFul api url for employee",
+              "durationInMillis": 4
+            },
+            {
+              "step": "When GET all request is sent for Employee",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "When GET all request is sent for Employee",
+              "durationInMillis": 66
+            },
+            {
+              "step": "Then All Employee records should be fetched",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Then All Employee records should be fetched",
+              "durationInMillis": 43
+            },
+            {
+              "step": "And Status code should be 200",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "And Status code should be 200",
+              "durationInMillis": 3
+            }
+          ]
+        },
+        "afterSteps": {
+          "matches": []
+        },
+        "storyAndScenarioMeta": {
+          "properties": []
+        },
+        "scenario": {
+          "title": "Read all Employee",
+          "meta": {
+            "properties": []
+          },
+          "givenStories": {
+            "givenStories": [],
+            "givenStoriesAsString": "",
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            }
+          },
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          },
+          "steps": [
+            "Given RestFul api url for employee",
+            "When GET all request is sent for Employee",
+            "Then All Employee records should be fetched",
+            "And Status code should be 200"
+          ]
+        }
+      },
+      "examplePerformableScenarios": [],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "Update Employee",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [],
+          "data": [],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given RestFul api url for employee",
+          "When PUT request is sent with unique employee id",
+          "Then Employee record should be updated",
+          "And Status code should be 200"
+        ]
+      },
+      "storyPath": "stories/EmployeeTest.story",
+      "allowed": true,
+      "normalPerformableScenario": {
+        "parameters": [],
+        "givenStories": [],
+        "beforeSteps": {
+          "matches": []
+        },
+        "steps": {
+          "matches": [],
+          "results": [
+            {
+              "step": "Given RestFul api url for employee",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Given RestFul api url for employee",
+              "durationInMillis": 5
+            },
+            {
+              "step": "When PUT request is sent with unique employee id",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "When PUT request is sent with unique employee id",
+              "durationInMillis": 130
+            },
+            {
+              "step": "Then Employee record should be updated",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Then Employee record should be updated",
+              "durationInMillis": 50
+            },
+            {
+              "step": "And Status code should be 200",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "And Status code should be 200",
+              "durationInMillis": 2
+            }
+          ]
+        },
+        "afterSteps": {
+          "matches": []
+        },
+        "storyAndScenarioMeta": {
+          "properties": []
+        },
+        "scenario": {
+          "title": "Update Employee",
+          "meta": {
+            "properties": []
+          },
+          "givenStories": {
+            "givenStories": [],
+            "givenStoriesAsString": "",
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            }
+          },
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          },
+          "steps": [
+            "Given RestFul api url for employee",
+            "When PUT request is sent with unique employee id",
+            "Then Employee record should be updated",
+            "And Status code should be 200"
+          ]
+        }
+      },
+      "examplePerformableScenarios": [],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "Delete Employee",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [],
+          "data": [],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given RestFul api url for employee",
+          "When DELETE request is sent with unique employee id",
+          "Then Employee record with given id should be deleted",
+          "And Status code should be 200"
+        ]
+      },
+      "storyPath": "stories/EmployeeTest.story",
+      "allowed": true,
+      "normalPerformableScenario": {
+        "parameters": [],
+        "givenStories": [],
+        "beforeSteps": {
+          "matches": []
+        },
+        "steps": {
+          "matches": [],
+          "results": [
+            {
+              "step": "Given RestFul api url for employee",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Given RestFul api url for employee",
+              "durationInMillis": 3
+            },
+            {
+              "step": "When DELETE request is sent with unique employee id",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "When DELETE request is sent with unique employee id",
+              "durationInMillis": 60
+            },
+            {
+              "step": "Then Employee record with given id should be deleted",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Then Employee record with given id should be deleted",
+              "durationInMillis": 2
+            },
+            {
+              "step": "And Status code should be 200",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "And Status code should be 200",
+              "durationInMillis": 2
+            }
+          ]
+        },
+        "afterSteps": {
+          "matches": []
+        },
+        "storyAndScenarioMeta": {
+          "properties": []
+        },
+        "scenario": {
+          "title": "Delete Employee",
+          "meta": {
+            "properties": []
+          },
+          "givenStories": {
+            "givenStories": [],
+            "givenStoriesAsString": "",
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            }
+          },
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          },
+          "steps": [
+            "Given RestFul api url for employee",
+            "When DELETE request is sent with unique employee id",
+            "Then Employee record with given id should be deleted",
+            "And Status code should be 200"
+          ]
+        }
+      },
+      "examplePerformableScenarios": [],
+      "status": "SUCCESSFUL"
+    }
+  ]
+}}

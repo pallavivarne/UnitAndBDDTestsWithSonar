@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Employee API Tests","Create Employee","SUCCESS","2017-08-04T16:57:24.812+05:30","0.0","4.29"
+"Employee API Tests","Delete Employee","SUCCESS","2017-08-04T16:57:30.454+05:30","0.0","0.08"
+"Employee API Tests","Read all Employee","SUCCESS","2017-08-04T16:57:30.121+05:30","0.0","0.12"
+"Employee API Tests","Read one Employee","SUCCESS","2017-08-04T16:57:29.223+05:30","0.0","0.89"
+"Employee API Tests","Update Employee","SUCCESS","2017-08-04T16:57:30.247+05:30","0.0","0.2"

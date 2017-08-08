@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Employee.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoco Multi Modules :: JUnit</a> &gt; <a href="index.source.html" class="el_package">com.emp.model</a> &gt; <span class="el_source">Employee.java</span></div><h1>Employee.java</h1><pre class="source lang-java linenums">package com.emp.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Employee {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Integer id;
+	
+	@Column
+    private String name;
+	
+	@Column
+    private String address;
+	
+	@Column
+    private String deptId;
+	
+	@Column
+    private Integer salary;
+	
+<span class="nc" id="L27">	public Employee() {}</span>
+	
+<span class="fc" id="L29">    public Employee(Integer id, String name,String address, String deptId, Integer salary) {</span>
+<span class="fc" id="L30">    	this.id = id;</span>
+<span class="fc" id="L31">        this.name = name;</span>
+<span class="fc" id="L32">        this.address = address;</span>
+<span class="fc" id="L33">        this.deptId = deptId;</span>
+<span class="fc" id="L34">        this.salary = salary;</span>
+<span class="fc" id="L35">    }</span>
+    
+	public Integer getId() {
+<span class="fc" id="L38">		return id;</span>
+	}
+	
+	public void setId(Integer id) {
+<span class="nc" id="L42">		this.id = id;</span>
+<span class="nc" id="L43">	}</span>
+	
+	public String getName() {
+<span class="fc" id="L46">		return name;</span>
+	}
+
+	public void setName(String name) {
+<span class="nc" id="L50">		this.name = name;</span>
+<span class="nc" id="L51">	}</span>
+
+	public String getAddress() {
+<span class="fc" id="L54">		return address;</span>
+	}
+
+	public void setAddress(String address) {
+<span class="nc" id="L58">		this.address = address;</span>
+<span class="nc" id="L59">	}</span>
+
+	public String getDeptId() {
+<span class="fc" id="L62">		return deptId;</span>
+	}
+
+	public void setDeptId(String dept) {
+<span class="nc" id="L66">		this.deptId = dept;</span>
+<span class="nc" id="L67">	}</span>
+
+	public Integer getSalary() {
+<span class="fc" id="L70">		return salary;</span>
+	}
+
+	public void setSalary(Integer salary) {
+<span class="nc" id="L74">		this.salary = salary;</span>
+<span class="nc" id="L75">	}</span>
+	
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>

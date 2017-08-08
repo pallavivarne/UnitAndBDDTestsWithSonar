@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+JaCoco Multi Modules :: JUnit,com.emp.controller,EmployeeController,31,0,0,0,7,0,6,0,6,0
+JaCoco Multi Modules :: JUnit,com.emp,ApplicationStart,88,0,0,0,20,0,6,0,6,0
+JaCoco Multi Modules :: JUnit,com.emp.base,BaseService,35,6,0,0,10,3,7,1,7,1
+JaCoco Multi Modules :: JUnit,com.emp.service,EmployeeService,38,26,0,4,8,9,2,4,2,2
+JaCoco Multi Modules :: JUnit,com.emp.model,Employee,23,33,0,0,11,12,6,6,6,6

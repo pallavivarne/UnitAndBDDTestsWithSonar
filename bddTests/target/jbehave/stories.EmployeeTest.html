@@ -1,0 +1,39 @@
+<div class="story">
+<h1>Employee API Tests</h1>
+<div class="path">stories/EmployeeTest.story</div>
+<div class="scenario">
+<h2>Scenario: Create Employee</h2>
+<div class="step successful">Given RestFul api url for employee '/employee'</div>
+<div class="step successful">When POST request is sent for create Employee</div>
+<div class="step successful">Then Employee should be created</div>
+<div class="step successful">And Status code should be 200</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Read one Employee</h2>
+<div class="step successful">Given RestFul api url for employee</div>
+<div class="step successful">When GET request is sent with unique employee id</div>
+<div class="step successful">Then Employee record with given id should be fetched</div>
+<div class="step successful">And Status code should be 200</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Read all Employee</h2>
+<div class="step successful">Given RestFul api url for employee</div>
+<div class="step successful">When GET all request is sent for Employee</div>
+<div class="step successful">Then All Employee records should be fetched</div>
+<div class="step successful">And Status code should be 200</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Update Employee</h2>
+<div class="step successful">Given RestFul api url for employee</div>
+<div class="step successful">When PUT request is sent with unique employee id</div>
+<div class="step successful">Then Employee record should be updated</div>
+<div class="step successful">And Status code should be 200</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Delete Employee</h2>
+<div class="step successful">Given RestFul api url for employee</div>
+<div class="step successful">When DELETE request is sent with unique employee id</div>
+<div class="step successful">Then Employee record with given id should be deleted</div>
+<div class="step successful">And Status code should be 200</div>
+</div>
+</div>

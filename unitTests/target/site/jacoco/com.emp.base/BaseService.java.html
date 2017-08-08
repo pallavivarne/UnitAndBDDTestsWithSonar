@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>BaseService.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoco Multi Modules :: JUnit</a> &gt; <a href="index.source.html" class="el_package">com.emp.base</a> &gt; <span class="el_source">BaseService.java</span></div><h1>BaseService.java</h1><pre class="source lang-java linenums">package com.emp.base;
+
+import java.io.Serializable;
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+
+/**
+ *  @author Pallavi Varne
+ *  Each service will implement BaseService
+ * 
+ */
+
+public abstract class BaseService&lt;E, ID extends Serializable&gt; {
+	protected BaseRepo&lt;E, ID&gt; entityRepo;
+	
+	public BaseService(BaseRepo&lt;E, ID&gt; entityRepo) {
+<span class="fc" id="L18">		super();</span>
+<span class="fc" id="L19">		this.entityRepo = entityRepo;</span>
+<span class="fc" id="L20">	}</span>
+	
+	public BaseRepo&lt;E, ID&gt; getEntityRepo() {
+<span class="nc" id="L23">		return entityRepo;</span>
+	}
+
+	public void setEntityRepo(BaseRepo&lt;E, ID&gt; entityRepo) {
+<span class="nc" id="L27">		this.entityRepo = entityRepo;</span>
+<span class="nc" id="L28">	}</span>
+	
+	public List&lt;E&gt; readAll(){
+<span class="nc" id="L31">		Iterable&lt;E&gt; entities = entityRepo.findAll();</span>
+<span class="nc" id="L32">		return (List&lt;E&gt;) entities;</span>
+	}
+	
+	public E create(E inputentity) {
+<span class="nc" id="L36">		return entityRepo.save(inputentity);</span>
+	}
+	
+	public E update(E inputentity){
+<span class="nc" id="L40">		return entityRepo.save(inputentity);</span>
+	}
+	
+	public E findById(ID id){
+<span class="nc" id="L44">		return entityRepo.findOne(id);</span>
+	}
+	
+	public HttpStatus delete(ID id){
+<span class="nc" id="L48">		entityRepo.delete(id);</span>
+<span class="nc" id="L49">		return HttpStatus.OK;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>
